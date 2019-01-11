@@ -2,6 +2,7 @@ package com.sidharth.springdemo.mvc;
 
 import javax.validation.Valid;
 
+import org.springframework.beans.propertyeditors.CustomNumberEditor;
 import org.springframework.beans.propertyeditors.StringTrimmerEditor;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -39,6 +40,9 @@ public class CustomerController {
 		
 		System.out.println("Last Name=|"+theCustomer.getLastName()+"|");
 		
+		System.out.println("Binding Result: "+bindingResult);
+		
+		System.out.println("\n\n\n");
 		if(bindingResult.hasErrors())
 		{
 			return "customer-form";

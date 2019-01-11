@@ -25,5 +25,7 @@
 			</c:forEach>
 			
 		</ul>
+		
+		<br>
 	</body>
 </html>
